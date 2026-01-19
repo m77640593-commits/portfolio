@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import GameGrid from './components/GameGrid';
 import Stats from './components/Stats';
-import ConceptLab from './components/ConceptLab';
 import AppointmentSection from './components/AppointmentSection';
 import Footer from './components/Footer';
 import { Section } from './types';
