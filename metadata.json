@@ -1,0 +1,8 @@
+{
+  "name": "Nebula Games | Roblox Dev Studio",
+  "description": "A premium Roblox development studio creating high-fidelity experiences and immersive metaverse worlds.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
