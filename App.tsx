@@ -1,10 +1,9 @@
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import GameGrid from './components/GameGrid';
-import ConceptLab from './components/ConceptLab';
 import Stats from './components/Stats';
+import ConceptLab from './components/ConceptLab';
 import AppointmentSection from './components/AppointmentSection';
 import Footer from './components/Footer';
 import { Section } from './types';
@@ -22,10 +21,8 @@ const App: React.FC = () => {
           <div className="absolute top-[10%] right-[-5%] w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-purple-600/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none"></div>
           <div className="absolute bottom-[20%] left-[-5%] w-[400px] md:w-[500px] h-[400px] md:h-[500px] bg-fuchsia-600/5 rounded-full blur-[100px] md:blur-[150px] pointer-events-none"></div>
           
-          <AppointmentSection />
-
           <GameGrid />
-          
+
           <section id={Section.ABOUT} className="py-24 md:py-40 relative">
             <div className="container mx-auto px-6 md:px-8 relative z-10">
               <div className="max-w-3xl mx-auto text-center">
@@ -46,10 +43,12 @@ const App: React.FC = () => {
               </div>
             </div>
           </section>
-
-          <ConceptLab />
           
           <Stats />
+
+  
+
+          <AppointmentSection />
           
           <section id={Section.COMMUNITY} className="py-20 md:py-32">
             <div className="container mx-auto px-5 md:px-8">

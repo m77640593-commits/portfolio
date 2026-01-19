@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Section } from '../types';
 
@@ -29,17 +28,18 @@ const Navbar: React.FC = () => {
         </div>
         
         <div className="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-tight text-purple-200/70">
-          <button onClick={() => scrollToSection(Section.APPOINTMENT)} className="hover:text-white transition-colors">Book Call</button>
           <button onClick={() => scrollToSection(Section.GAMES)} className="hover:text-white transition-colors">Games</button>
-          <button onClick={() => scrollToSection(Section.CONCEPT_LAB)} className="hover:text-white transition-colors">Lab</button>
           <button onClick={() => scrollToSection(Section.ABOUT)} className="hover:text-white transition-colors">About</button>
+          <button onClick={() => scrollToSection(Section.STATS)} className="hover:text-white transition-colors">Stats</button>
+          <button onClick={() => scrollToSection(Section.CONCEPT_LAB)} className="hover:text-white transition-colors">Idea Lab</button>
+          <button onClick={() => scrollToSection(Section.APPOINTMENT)} className="hover:text-white transition-colors">Contact</button>
         </div>
 
         <button 
           onClick={() => scrollToSection(Section.APPOINTMENT)}
           className="px-4 md:px-6 py-2 md:py-2.5 bg-purple-600 text-white font-bold rounded-full text-xs md:text-sm hover:bg-purple-500 transition-all shadow-lg shadow-purple-600/20 active:scale-95"
         >
-          Book
+          Book Now
         </button>
       </div>
     </nav>

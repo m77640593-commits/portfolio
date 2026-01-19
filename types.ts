@@ -1,4 +1,3 @@
-
 export interface Game {
   id: string;
   title: string;
@@ -9,20 +8,20 @@ export interface Game {
   platforms: string[];
 }
 
+export enum Section {
+  HERO = 'hero',
+  GAMES = 'games',
+  STATS = 'stats',
+  COMMUNITY = 'community',
+  ABOUT = 'about',
+  APPOINTMENT = 'appointment',
+  CONCEPT_LAB = 'concept-lab'
+}
+
 export interface GameConcept {
   title: string;
   pitch: string;
   mechanics: string[];
-  monetization: string; // Roblox specific
+  monetization: string;
   uniqueSellingPoint: string;
-}
-
-export enum Section {
-  HERO = 'hero',
-  GAMES = 'games',
-  CONCEPT_LAB = 'concept-lab',
-  STATS = 'stats',
-  COMMUNITY = 'community',
-  ABOUT = 'about',
-  APPOINTMENT = 'appointment'
 }
